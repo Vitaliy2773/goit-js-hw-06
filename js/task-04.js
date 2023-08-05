@@ -1,5 +1,8 @@
 let counterValue = 0;
 
+const value = document.querySelector("#value")
+
+
 const buttonDecrement = document.querySelector('button[data-action="decrement"]');
 console.log(buttonDecrement.dataset.action);
 
@@ -12,11 +15,13 @@ console.log(buttonIncrement.dataset.action);
 
 const handleClickdecrement = () => {
     console.log(counterValue -= 1)
+    value.innerHTML = counterValue
     
 }
 
 const handleClickincrement = () => {
     console.log(counterValue += 1)
+    value.innerHTML = counterValue
 }
 
 buttonDecrement.addEventListener('click', handleClickdecrement)

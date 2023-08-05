@@ -8,11 +8,17 @@ numberOfItem.forEach(item => {
 
 numberOfItem.forEach (item => item.textContent)
 
-
-const titleOfItem = document.querySelectorAll('h2 > li');
+const itemMenu = document.querySelectorAll('.item-animals')
+console.log(itemMenu);
+itemMenu.forEach(itemM => {
+  console.log(itemM);
+})
+const titleOfItem = document.querySelectorAll('h2');
 console.log(titleOfItem)
 
 titleOfItem.forEach(item => {
     console.log(item)
 })
+
+itemMenu.prepend(titleOfItem)
 

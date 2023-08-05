@@ -40,7 +40,8 @@ condimetsItem.textContent = 'Condiments'
 condimetsItem.classList.add('item')
 console.log(condimetsItem);
 
-listIngridients.append(potatoesItem,mushroomsItem,garlicItem,tomatosItem,herbsItem,condimetsItem)
+listIngridients.append(potatoesItem, mushroomsItem, garlicItem, tomatosItem, herbsItem, condimetsItem)
+console.log(listIngridients);
 
 
 

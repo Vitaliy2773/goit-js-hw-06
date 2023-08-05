@@ -8,11 +8,11 @@ textInput.addEventListener("input", (event) => {
     if (nameOutput !== "") {
         nameOutput.textContent = event.currentTarget.value
     }
-    // else if (nameOutput === "") {
-    //     nameOutput.textContent = "Anonymous"
-    // }
-    else {
+    else if (nameOutput === "") {
         nameOutput.textContent = "Anonymous"
-    } 
+    }
+    // else {
+    //     nameOutput.textContent = "Anonymous"
+    // } 
     
 })

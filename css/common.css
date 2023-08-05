@@ -29,3 +29,7 @@ button {
   justify-content: space-around;
   gap: 20px;
 }
+
+.valid {
+  border-color: red;
+}
