@@ -13,6 +13,8 @@ const images = [
   },
 ];
 
+// images.insertAdjacentHTML('beforend',<li><img></li>)
+
 const imagesWrapper = document.querySelector(".gallery")
 
 const itemImg1 = document.createElement("li")
@@ -55,7 +57,7 @@ itemImg1.append(img1)
 itemImg2.append(img2)
 itemImg3.append(img3)
 imagesWrapper.append(itemImg1,itemImg2,itemImg3)
-// imagesWrapper.insertAdjacentHTML("afterbegin",itemImg1,itemImg2,itemImg3)
+// imagesWrapper.insertAdjacentHTML("afterbegin",itemImg1)
 console.log(imagesWrapper)
 
 
