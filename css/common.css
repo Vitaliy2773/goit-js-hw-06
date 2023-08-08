@@ -33,3 +33,7 @@ button {
 .valid {
   border-color: red;
 }
+
+.img {
+  display: flex;
+}

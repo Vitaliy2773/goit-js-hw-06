@@ -6,19 +6,16 @@ numberOfItem.forEach(item => {
     console.log(`Number of categories: ${item}`)
 })
 
-numberOfItem.forEach (item => item.textContent)
 
-const itemMenu = document.querySelectorAll('.item-animals')
-console.log(itemMenu);
-itemMenu.forEach(itemM => {
-  console.log(itemM);
-})
-const titleOfItem = document.querySelectorAll('h2');
-console.log(titleOfItem)
+const categories = document.querySelector('#categories')
+console.log(categories);
+// const titleOfItem = document.querySelectorAll('h2');
+// console.log(titleOfItem)
 
-titleOfItem.forEach(item => {
-    console.log(item)
-})
+console.log(categories.textContent);
 
-itemMenu.prepend(titleOfItem)
+
+
+
+// itemMenu.prepend(titleOfItem)
 
