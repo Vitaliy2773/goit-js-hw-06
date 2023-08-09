@@ -4,6 +4,8 @@ console.log(input);
 const text = document.querySelector('#text')
 console.log(text);
 
-const changeInput = input.addEventListener("input", (event) => {
-    if 
-})
+input.addEventListener("input", changeInput);
+
+function changeInput(e) {
+    span.style.fontsize = e.currentTarget.value + "px";
+}
