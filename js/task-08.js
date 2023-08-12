@@ -1,5 +1,5 @@
-const form = document.querySelector(".login-form")
-console.log(form);
+const formEl = document.querySelector(".login-form")
+console.log(formEl);
 
 
 
@@ -20,4 +20,4 @@ function handleSubmit (event) {
 }
 
 
-form.addEventListener("submit", handleSubmit);
+formEl.addEventListener("submit", handleSubmit);
