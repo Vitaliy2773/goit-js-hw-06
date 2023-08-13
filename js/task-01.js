@@ -2,8 +2,8 @@
 const numberOfItem = document.querySelectorAll('.item');
 
 
-const numberOfItemsall = numberOfItem.length
-console.log(`Number of categories: ${numberOfItemsall} `);
+const numberOfItemsAll = numberOfItem.length
+console.log(`Number of categories: ${numberOfItemsAll} `);
 
 
 numberOfItem.forEach(element => {

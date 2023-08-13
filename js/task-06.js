@@ -1,19 +1,22 @@
 
 
-const input = document.querySelector("#validation-input").onblur = function () {
-    console.log(this.value.length);
-    if (this.getAttribute('data-length') >= this.value.length) {
-        this.classList.remove('invalid'),
-            this.classList.add('valid')
-    }
-
-    else {
-        this.classList.remove('valid'),
-            this.classList.add('invalid')
-    }
-}
+const input = document.querySelector("#validation-input")
 
 
+ function onBlur(event) {
+   const inputDataLength = Number(input.dataset.length);
+   const inputValueLength = Number(input.value.trim().length);
+
+   if (inputValueLength === inputDataLength) {
+     input.classList.add('valid');
+     input.classList.remove('invalid');
+   }
+
+   if (inputValueLength !== inputDataLength && inputValueLength !== 0) {
+    input.classList.add('invalid');
+   }
+ }
 
 
-// input.addEventListener("blur", onblur())
+
+input.addEventListener("blur", onBlur)

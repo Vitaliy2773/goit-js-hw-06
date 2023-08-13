@@ -19,7 +19,7 @@ const images = [
 
 
    const imagesWrapper = document.querySelector(".gallery");
-   const cards = images.map((item) => `<li style="display:'flex';"><img width="300" url: url=${item.url}, alt: alt=${item.alt}/></li>`)
+   const cards = images.map((item) => `<li style="display:'flex';"><img width="300" src="${item.url}",  alt="${item.alt}"/></li>`)
      .join("");
 
   imagesWrapper.style.listStyle = "none";
